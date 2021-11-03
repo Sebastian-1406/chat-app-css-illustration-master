@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+
+    --fontRubik: 'Rubik', sans-serif;
+    --Pale-Violet: #d89eff;
+    --ModerateViolet: #9241c8;
+    --Desaturated-Dark-Violet: #6e5d7e;
+    --Grayish-Blue: #c6cacd;
+    --Very-Dark-Desaturated-Violet: #3e2753;
+    --Dark-Grayish-Violet: #a39daa;
+    --Light-Magenta: rgb(233, 66, 255);
+    --Light-Violet: #8838ff;
+    --White: #ffffff;
+    --Light-Grayish-Violet: #f5f3f7;
+    --Very-Dark-Desaturated-Violet: #3e2753;
+    --Very-Light-Magenta: #e570ff;
+}
+
+body {
+    font-family: var(--fontRubik);
+    background-color: var(--Light-Grayish-Violet);
+    position: relative;
+}
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px 0;
+}
+.contenedor::after {
+    content: "";
+    position: absolute;
+    background: linear-gradient(240deg, var(--Light-Magenta) 0%, var(--Light-Violet) 100%);
+    width: 50%;
+    height: 65%;
+    left: 0;
+    top: -60px;
+    z-index: -1;
+    border-bottom-right-radius: 200px;
+}
+
+.celular {
+    width: 250px;
+    background: var(--White);
+    border-radius: 30px;
+    padding: 13px;
+}
+.fondo {
+    background: var(--Light-Grayish-Violet);
+    border-radius: 30px;
+    height: 100%;
+}
+
+.contenedor__contacto {
+    background: linear-gradient(90deg, var(--Light-Violet) 5%, var(--Light-Magenta) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 15px;
+    padding-top: 40px;
+    position: relative;
+}
+
+.contenedor__contacto::after {
+    content: "";
+    width: 55%;
+    height: 25px;
+    position: absolute;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: #fff;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: inline-block;
+    margin: auto;
+}
+
+.contacto {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contacto .avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    border: 2px solid var(--White);
+}
+.contacto-info {
+    font-size: 13px;
+}
+.contacto-info p:first-child {
+    font-weight: 500;
+    color: var(--White);
+    margin-bottom: 3px;
+}
+.contacto-info p:last-child {
+    color: var(--Pale-Violet);
+    font-size: 10px;
+}
+.fas {
+    color: var(--White);
+}
+.chat {
+    padding: 15px 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.resivido {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.enviado {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+.pink {
+    background: #ede5f4;
+    color: var(--ModerateViolet);
+    font-size: 10px;
+    max-width: 140px;
+    border-radius: 8px;
+    padding: 8px;
+    line-height: 14px;
+}
+.chat-imagenes {
+    display: inline-flex;
+    gap: 10px;
+}
+.chat-imagenes img {
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+}
+.chat-white {
+    background: var(--White);
+    color: #0009;
+    font-size: 10px;
+    max-width: 140px;
+    border-radius: 8px;
+    padding: 8px;
+    line-height: 14px;
+}
+.tiempo {
+    font-size: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: linear-gradient(90deg, var(--Light-Magenta) 0%, var(--Light-Violet) 100%);
+    padding: 10px;
+    border-radius: 10px;
+    border-bottom-left-radius: 5px;
+    max-width: 180px;
+}
+.circulo {
+    width: 13px;
+    height: 13px;
+    border: solid 1px #fff5;
+    border-radius: 100px;
+}
+.select {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--Pale-Violet);
+}
+.precio {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--White);
+}
+.chat-enviar {
+    grid-column: span 2;
+    background: white;
+    border-radius: 50px;
+    padding: 10px;
+    padding-left: 20px;
+    position: relative;
+    padding-top: 13px;
+}
+.chat-enviar input {
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 80%;
+    font-size: 12px;
+}
+.chat-enviar input::placeholder {
+    color: var(--Grayish-Blue);
+    font-size: 11px;
+}
+.chat-enviar .enviar {
+    background: var(--Very-Dark-Desaturated-Violet);
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    position: absolute;
+    right: 5px;
+    top: 6px;
+    display: inline-flex;
+}
+.chat-enviar .enviar .fas {
+    font-size: 13px;
+    display: inline-block;
+    margin: auto;
+}
+.texto {
+    text-align: center;
+    padding: 40px;
+    font-size: 15px;
+}
+.texto h1 {
+    font-weight: 500;
+    color: var(--Very-Dark-Desaturated-Violet);
+}
+.texto p{
+    line-height: 23px;
+    margin: 10px 0;
+    color: var(--Dark-Grayish-Violet);
+}
+
+@media screen and (min-width:900px){
+    body {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .contenedor {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        margin: 100px 50px 100px 80px;
+        align-items: center;
+        gap: 10px;
+        width: 650px;
+    }
+    .contenedor::after {
+        width: 40%;
+        max-width: 450px;
+        top: -150px;
+        height: auto;
+        border-bottom-right-radius: 300px;
+        border-bottom-left-radius: 300px;
+        bottom: 20%;
+        left: -20%;
+    }
+    .celular {
+        width: 260px;
+    }
+    .texto {
+        text-align: left;
+    }
+    .texto h1 {
+        font-size: 33px;
+    }
+    .texto p {
+        line-height: 25px;
+        font-size: 12px;
+    }
+}
+@media screen and (min-width:1200px){
+    .contenedor {
+        margin: 100px 200px 100px 250px;
+        width: 750px;
+        gap: 30px;
+    }
+    .contenedor::after {
+        left: -10%;
+    }
+    .texto p {
+        font-size: 14px;
+    }
+
+}
+@media screen and (min-width:1400px){
+
+    .contenedor {
+        width: auto;
+        margin: 150px 260px 150px 360px;
+    }
+    .contenedor::after {
+        left: -1%;
+        border-bottom-left-radius: 200px;
+
+    }
+    .texto p {
+        font-size: 15px;
+    }
+    
+}
