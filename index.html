@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
 	<meta charset="UTF-8">
@@ -22,77 +22,57 @@
 
 	<div class="contenedor">
 
-		<div class="celular">
-			<div class="fondo">
-				<div class="contenedor__contacto">
-					<div class="contacto">
-						<i class="fas fa-chevron-left"></i>
-						<img src="./images/avatar.jpg" alt="avatar/jpg" class="avatar">
-						<div class="contacto-info">
-							<p>Samuel Green</p>
-							<p>Available to Walk</p>
-						</div>
-					</div>
-					<i class="fas fa-ellipsis-v"></i>
-				</div>
-				<div class="chat">
-					<div class="resivido">
-						<div class="pink">
-							<p>That sounds great. I'd be happy to discuss more.</p>
-						</div>
-						<div class="pink">
-							<p>Could you send over some pictures of your dog, please?</p>
-						</div>
-					</div>
-					<div class="enviado">
-						<div class="chat-imagenes">
-							<img src="./images/dog-image-1.jpg" alt="dog/jpg">
-							<img src="./images/dog-image-2.jpg" alt="dog/jpg">
-							<img src="./images/dog-image-3.jpg" alt="dog/jpg">
-						</div>
-						<div class="chat-white">
-							<p>Here are a few pictures. She’s a happy girl!</p>
-						</div>
-						<div class="chat-white">
-							<p>Can you make it?</p>
-						</div>
-					</div>
-					<div class="resivido">
-						<div class="pink">
-							<p>She looks so happy! The time we discussed works. How long shall I take her out for?</p>
-						</div>
-						<div class="tiempo">
-							<div class="select">
-								<div class="circulo"></div>
-								<p>30 minute walk</p>
-							</div>
-							<p class="precio">$29</p>	
-						</div>
-						<div class="tiempo">
-							<div class="select">
-								<div class="circulo"></div>
-								<p>1 hour walk</p>
-							</div>
-							<p class="precio">$49</p>	
-						</div>
-					</div>
+		<section class="app">
 
-					<div class="chat-enviar">
-						<input type="text" placeholder="Type a message...">
-						<div class="enviar"><i class="fas fa-chevron-right"></i></div>
+			<div class="app-header">
+				<div class="app-contacto">
+					<i class="fas fa-angle-left"></i>
+					<img src="./images/avatar.jpg" alt="Samuel/jpg" aria-hidden="true">
+					<div class="nombre">
+						<p>Samuel Green</p>
+						<p>Available to Walk</p>
 					</div>
 				</div>
-				
+				<i class="fas fa-ellipsis-v"></i>
 			</div>
-		</div>
-		<header>
+			<div class="app-chat">
+				<p class="bubble pink">That sounds great. I'd be happy to discuss more.</p>
+				<p class="bubble pink">Could you send over some pictures of your dog, please?</p>
+				<div class="bubble imagenes">
+					<img src="./images/dog-image-1.jpg" alt="dog/jpg">
+					<img src="./images/dog-image-2.jpg" alt="dog/jpg">
+					<img src="./images/dog-image-3.jpg" alt="dog/jpg">
+				</div>
+				<p class="bubble white">Here are a few pictures. She’s a happy girl!</p>
+				<p class="bubble white">Can you make it?</p>
+				<p class="bubble pink">She looks so happy! The time we discussed works. How long shall I take her out for?</p>
+				<p class="bubble servicio">
+					<span class="tiempo">30 minute walk</span>
+					<span class="precio">$29</span>
+				</p>
+				<p class="bubble servicio">
+					<span class="tiempo">1 hour walk</span>
+					<span class="precio">$49</span>
+				</p>
+				<div class="chat">
+					<input type="text" disabled placeholder="Type a message...">
+					<div class="chat-enviar">
+						<i class="fas fa-angle-right"></i>
+					</div>
+				</div>
+			</div>
+
+
+		</section>
+
+		<section>
 			<div class="texto">
 				<h1>Simple booking</h1>
 				<p>Stay in touch with our dog walkers through the chat interface. This makes it easy to 
 					discuss arrangements and make bookings. Once the walk has been completed you can rate 
 					your walker and book again all through the chat.</p>			
 			</div>
-		</header>
+		</section>
 
 	</div>
 
