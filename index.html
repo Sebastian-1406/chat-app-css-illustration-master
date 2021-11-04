@@ -5,74 +5,68 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- displays site properly based on user's device -->
-
 	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
-	<title>Frontend Mentor | [Challenge Name Here]</title>
-
 	<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 
 	<link rel="stylesheet" href="./css/styles.css">
-
+	<script src="https://kit.fontawesome.com/2524b2af2f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-	<script src="https://kit.fontawesome.com/2524b2af2f.js" crossorigin="anonymous"></script>
-
 	<div class="contenedor">
 
-		<section class="app">
-
-			<div class="app-header">
-				<div class="app-contacto">
-					<i class="fas fa-angle-left"></i>
-					<img src="./images/avatar.jpg" alt="Samuel/jpg" aria-hidden="true">
-					<div class="nombre">
-						<p>Samuel Green</p>
-						<p>Available to Walk</p>
+		<main>
+			<section class="app">
+			
+				<div class="app-header">
+					<div class="app-contacto">
+						<i class="fas fa-angle-left"></i>
+						<img src="./images/avatar.jpg" alt="Samuel/jpg" aria-hidden="true">
+						<div class="nombre">
+							<p>Samuel Green</p>
+							<p>Available to Walk</p>
+						</div>
+					</div>
+					<i class="fas fa-ellipsis-v"></i>
+				</div>
+				<div class="app-chat">
+					<p class="bubble pink">That sounds great. I'd be happy to discuss more.</p>
+					<p class="bubble pink">Could you send over some pictures of your dog, please?</p>
+					<div class="bubble imagenes">
+						<img src="./images/dog-image-1.jpg" alt="dog/jpg">
+						<img src="./images/dog-image-2.jpg" alt="dog/jpg">
+						<img src="./images/dog-image-3.jpg" alt="dog/jpg">
+					</div>
+					<p class="bubble white">Here are a few pictures. She’s a happy girl!</p>
+					<p class="bubble white">Can you make it?</p>
+					<p class="bubble pink">She looks so happy! The time we discussed works. How long shall I take her out for?</p>
+					<p class="bubble servicio">
+						<span class="tiempo">30 minute walk</span>
+						<span class="precio">$29</span>
+					</p>
+					<p class="bubble servicio">
+						<span class="tiempo">1 hour walk</span>
+						<span class="precio">$49</span>
+					</p>
+					<div class="chat">
+						<input type="text" placeholder="Type a message..." disabled>
+						<button class="chat-enviar"><i class="fas fa-angle-right"></i></button>
 					</div>
 				</div>
-				<i class="fas fa-ellipsis-v"></i>
-			</div>
-			<div class="app-chat">
-				<p class="bubble pink">That sounds great. I'd be happy to discuss more.</p>
-				<p class="bubble pink">Could you send over some pictures of your dog, please?</p>
-				<div class="bubble imagenes">
-					<img src="./images/dog-image-1.jpg" alt="dog/jpg">
-					<img src="./images/dog-image-2.jpg" alt="dog/jpg">
-					<img src="./images/dog-image-3.jpg" alt="dog/jpg">
-				</div>
-				<p class="bubble white">Here are a few pictures. She’s a happy girl!</p>
-				<p class="bubble white">Can you make it?</p>
-				<p class="bubble pink">She looks so happy! The time we discussed works. How long shall I take her out for?</p>
-				<p class="bubble servicio">
-					<span class="tiempo">30 minute walk</span>
-					<span class="precio">$29</span>
-				</p>
-				<p class="bubble servicio">
-					<span class="tiempo">1 hour walk</span>
-					<span class="precio">$49</span>
-				</p>
-				<div class="chat">
-					<input type="text" disabled placeholder="Type a message...">
-					<div class="chat-enviar">
-						<i class="fas fa-angle-right"></i>
-					</div>
-				</div>
-			</div>
+			
+			
+			</section>
+		</main>
 
-
-		</section>
-
-		<section>
+		<header>
 			<div class="texto">
 				<h1>Simple booking</h1>
 				<p>Stay in touch with our dog walkers through the chat interface. This makes it easy to 
 					discuss arrangements and make bookings. Once the walk has been completed you can rate 
 					your walker and book again all through the chat.</p>			
 			</div>
-		</section>
+		</header>
 
 	</div>
 

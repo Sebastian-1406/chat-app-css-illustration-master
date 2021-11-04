@@ -190,6 +190,7 @@ body {
 .chat input {
     border: none;
     outline: none;
+    background: transparent;
 }
 .chat input::placeholder {
     font-size: 11px;
